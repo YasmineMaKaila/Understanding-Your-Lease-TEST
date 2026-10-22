@@ -260,6 +260,7 @@ export const LEASE = [
         "whyItMatters": "Each person listed as a resident is bound by the whole agreement, not just their share.",
         "example": "Jordan Parker and Alex Rivera sign as residents; Oakridge Residential Partners, LLC is the owner.",
         "importantToKnow": "Paragraph 1 notes that if anyone has guaranteed performance of the lease, a separate Lease Contract Guaranty is attached. A guarantor is a third party who is legally responsible for the financial obligations under the lease if the resident fails to pay rent or other money owed.",
+        "soe": [{"number": 104, "title": "Roommates – Adding and/or Removing", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 138, "title": "Leasing Roommates", "section": "Customers", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_customers.aspx"}],
         "source": "WIL: Parties, Guarantor | Lease 1",
         "needsContent": false,
         "rects": [
@@ -309,6 +310,7 @@ export const LEASE = [
         "whyItMatters": "Under 3 the lease automatically renews month-to-month unless notice is given.",
         "example": "The term runs September 10, 2026 to 11:59 p.m. September 30, 2027, with 60 days written notice required.",
         "importantToKnow": "Paragraph 3 states that if the notice-days blank is not filled in, at least 30 days notice is required.",
+        "soe": [{"number": 226, "title": "Renewal Process", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 227, "title": "Non-Renewal", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Lease term, Month-to-Month | Lease 3",
         "needsContent": false,
         "rects": [
@@ -333,6 +335,7 @@ export const LEASE = [
         "whyItMatters": "Paragraph 4 makes the deposit due on or before signing, and it is the fund that move-out charges are measured against.",
         "example": "$500.00, held at Peachtree State Bank & Trust.",
         "importantToKnow": "Paragraph 4 states that if interest is earned on the deposit, the owner may keep it.",
+        "soe": [{"number": 142, "title": "Collecting Security Deposits", "section": "Customers", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_customers.aspx"}],
         "source": "WIL: Security Deposit | Lease 4",
         "needsContent": false,
         "rects": [
@@ -358,6 +361,7 @@ export const LEASE = [
         "title": "Keys and Access Devices",
         "leaseLanguage": "You will be provided 2 apartment key(s), 2 mailbox key(s), ____ FOB(s), and/or ____ other access device(s) for access to the building and amenities at no additional cost at move-in. If the key, FOB, or other access device is lost or becomes damaged during your tenancy or is not returned or is returned damaged when you move out, you will be responsible for the costs for the replacement and/or repair of the same.",
         "meaning": "Paragraph 5 records the keys, mailbox keys, FOBs and other access devices provided at move-in, and states that the resident is responsible for replacement or repair costs if a device is lost, damaged, or not returned.",
+        "soe": [{"number": 228, "title": "Resident Key Release Authorization", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 134, "title": "Access Code and Entry Device Management", "section": "Community", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_community.aspx"}],
         "source": "Lease 5 — no entry in the educational material. Plain-language copy needed, or approve this neutral restatement.",
         "needsContent": true,
         "rects": [
@@ -389,6 +393,7 @@ export const LEASE = [
             "label": "Special Provisions (Paragraph 10), page 2"
           }
         ],
+        "soe": [{"number": 260, "title": "Late Charges", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 264, "title": "Notification and Collection of Returned Checks", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 847, "title": "Payment – Forms of", "section": "Financials", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_financials.aspx"}],
         "source": "WIL: Rent, Prorated | Lease 6",
         "needsContent": false,
         "rects": [
@@ -460,6 +465,7 @@ export const LEASE = [
         "leaseLanguage": "We do not maintain insurance to cover your personal property or personal injury. … We urge you to get your own insurance for losses to your personal property or injuries due to theft, fire, water damage, pipe leaks and the like. Additionally, you are (check one) required to purchase personal liability insurance … If required, this policy must list Owner as an additional insured and failure to maintain personal liability insurance throughout your tenancy, including any renewal periods and/or lease extensions, is an incurable breach of this Lease Contract and may result in the termination of tenancy and eviction …",
         "meaning": "Paragraph 8 states that the owner does not insure the resident’s personal property or personal injury, urges renter’s insurance, and contains the personal liability insurance election. In this lease the “required to purchase personal liability insurance” box is checked.",
         "importantToKnow": "Paragraph 8 describes failure to maintain required personal liability insurance as an incurable breach of the lease.",
+        "soe": [{"number": 312, "title": "Liability Only Protection", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "Lease 8 — no insurance entry in the educational material. Copy needed; confirm whether the incurable-breach language should be surfaced to residents.",
         "needsContent": true,
         "rects": [
@@ -485,6 +491,7 @@ export const LEASE = [
         "title": "Locks, Latches, and Rekeying",
         "leaseLanguage": "Keyed lock(s) will be rekeyed after the prior resident moves out. The rekeying will be done before you move in to your apartment. You agree to not install additional or different locks or latches on any doors or windows of the premises, unless we have consented in writing to such installation. … **Payment for Rekeying, Repairs, Etc.** You must pay for all repairs or replacements arising from misuse or damage to devices by you or your occupants, or guests during your occupancy.",
         "meaning": "Paragraph 9 covers rekeying before move-in, the prohibition on installing additional locks without written consent, and who pays for later rekey requests and for repairs arising from misuse.",
+        "soe": [{"number": null, "title": "Lock and Alarm Specification and Installation", "section": "Service", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_services.aspx"}],
         "source": "Lease 9 — partially adjacent to WIL: Maintenance and Repairs. Supply copy, or approve this neutral restatement.",
         "needsContent": true,
         "rects": [
@@ -590,6 +597,7 @@ export const LEASE = [
         "title": "Property Left Behind — Storage, Redemption, Disposition",
         "leaseLanguage": "**Storage.** We may store, but have no duty to store, property removed after judicial eviction, surrender, or abandonment of the apartment. … **Redemption.** If we’ve removed and stored property after surrender, abandonment, or judicial eviction, you may redeem only by paying all sums you owe, including rent, late charges, reletting charges, storage, damages, etc. … **Disposition or Sale.** … Property not thrown away or given to charity may be disposed of only by sale, which must be held no sooner than 30 days after written notice of date, time, and place of sale is sent by both regular mail and certified mail (return receipt requested) to your last known address.",
         "meaning": "Paragraph 13 continued covers storage of property after eviction, surrender or abandonment; how stored property may be redeemed; and the notice requirements before any sale.",
+        "soe": [{"number": null, "title": "Abandonment", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 304, "title": "Trash Outs", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "Lease 13 (continued) — extends WIL: Lien. Supply copy, or approve this neutral restatement.",
         "needsContent": true,
         "rects": [
@@ -630,6 +638,7 @@ export const LEASE = [
         "meaning": "Rent and terms generally cannot change before the initial term ends, except through the routes Paragraph 15 lists.",
         "whyItMatters": "Paragraph 15 describes how a month-to-month continuation can carry increased rent if proper written notice is given. This connects to the renewal language in 3.",
         "importantToKnow": "Paragraph 15 states the modified lease can begin without the resident’s signature unless written move-out notice is given under 46.",
+        "soe": [{"number": 226, "title": "Renewal Process", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Month-to-Month | Lease 15",
         "needsContent": false,
         "rects": [
@@ -679,6 +688,26 @@ export const LEASE = [
           }
         ],
         "zoom": 1.8,
+        "contentFlag": null
+      },
+      {
+        "id": "disclosure-rights",
+        "paragraphRef": "18",
+        "title": "Disclosure Rights",
+        "leaseLanguage": "If someone requests information on you or your rental history for law-enforcement, governmental, or business purposes, we may provide it.",
+        "meaning": "Paragraph 18 states that the owner may provide information about a resident or their rental history when it is requested for law-enforcement, governmental, or business purposes.",
+        "soe": [{"number": 220, "title": "Releasing Resident Information", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
+        "source": "Lease 18 — copy needed, or approve this neutral restatement.",
+        "needsContent": true,
+        "rects": [
+          {
+            "x": 50.71,
+            "y": 56.6,
+            "width": 44.94,
+            "height": 3.3
+          }
+        ],
+        "zoom": 2.2,
         "contentFlag": null
       },
       {
@@ -748,6 +777,7 @@ export const LEASE = [
         "meaning": "The parking provisions, rules and regulations, including the thirteen conditions under which a vehicle is unauthorized or illegally parked.",
         "whyItMatters": "Paragraph 22 states that unauthorized vehicles may be removed at the resident’s expense.",
         "importantToKnow": "Reminder: check your community’s parking addendum.",
+        "soe": [{"number": 220, "title": "Parking Policy/Permits", "section": "Community", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_community.aspx"}],
         "source": "WIL: Parking | Lease 22",
         "needsContent": false,
         "rects": [
@@ -778,7 +808,7 @@ export const LEASE = [
             "label": "When We May Enter (Paragraph 29), page 5"
           }
         ],
-        "soe": [{"number": 270, "title": "Early Termination of Lease", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SOEs%20Documents/2-Resident/Early%20Termination%20of%20Lease.docx"}, {"number": 271, "title": "Terminations for Military Personnel", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SOEs%20Documents/2-Resident/Terminations%20for%20Military%20Personnel.docx"}, {"number": 286, "title": "Domestic Violence", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SOEs%20Documents/2-Resident/Domestic%20Violence.docx"}],
+        "soe": [{"number": 270, "title": "Early Termination of Lease", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 271, "title": "Terminations for Military Personnel", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 286, "title": "Domestic Violence", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 302, "title": "Death of a Resident", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 106, "title": "Resident Transfer", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Release of Resident | Lease 23",
         "needsContent": false,
         "rects": [
@@ -799,7 +829,7 @@ export const LEASE = [
         "leaseLanguage": "A resident (including a resident’s spouse) who is a service member on active duty or is called to active duty in the regular or the reserve component of the U.S. Armed Forces, U.S. Coast Guard or National Guard, shall have the right to end this Apartment Rental Contract early by giving 30 days written notice, paying all rent due through the notice date, and providing a copy of the official military orders or written verification signed by the service member’s commanding officer or by providing base housing orders as provided in O.C.G.A. § 44-7-22, if the service member is: …",
         "meaning": "Paragraph 24 sets out an early-termination right for service members who meet one of six listed conditions, with notice and documentation requirements.",
         "importantToKnow": "The Servicemembers Civil Relief Act (SCRA) is a federal law; this applies to all leases.",
-        "soe": [{"number": 271, "title": "Terminations for Military Personnel", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SOEs%20Documents/2-Resident/Terminations%20for%20Military%20Personnel.docx"}],
+        "soe": [{"number": 271, "title": "Terminations for Military Personnel", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "Lease 24 — a specific exception to 23. Supply copy, or approve this neutral restatement.",
         "needsContent": true,
         "rects": [
@@ -884,6 +914,7 @@ export const LEASE = [
             "label": "Security Deposit Deductions (Paragraph 50), page 8"
           }
         ],
+        "soe": [{"number": 180, "title": "Move-In Process", "section": "Customers", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_customers.aspx"}, {"number": 112, "title": "Alarm Systems", "section": "Service", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_services.aspx"}],
         "source": "WIL: Home Alterations | Lease 26",
         "needsContent": false,
         "rects": [
@@ -905,6 +936,7 @@ export const LEASE = [
         "meaning": "How to submit a maintenance or service request.",
         "whyItMatters": "Paragraph 27 requires requests through the online resident/maintenance portal, or signed and in writing to the designated representative, except for the emergencies it lists. It also states that notes taken on an oral request do not count as a written request.",
         "importantToKnow": "Cortland policy is to treat air conditioning problems as emergency maintenance requests.",
+        "soe": [{"number": 244, "title": "Service Requests", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 405, "title": "Service Emergencies and Calls After Hours/On Call", "section": "Service", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_services.aspx"}],
         "source": "WIL: Maintenance and Repairs | Lease 27",
         "needsContent": false,
         "rects": [
@@ -932,6 +964,7 @@ export const LEASE = [
         "meaning": "Paragraph 28 states that no animals are allowed anywhere in the apartment or community without written authorization.",
         "whyItMatters": "For pets, there may be an additional Pet Addendum to reference.",
         "importantToKnow": "Paragraph 28 states that deposits, additional rents, fees or other charges are not required for an assistance animal needed due to disability, including an emotional support or service animal, as authorized under applicable law.",
+        "soe": [{"number": 230, "title": "Animal Acceptance", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 112, "title": "Reasonable Accommodation and Reasonable Modification", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Animal Restrictions | Lease 28",
         "needsContent": false,
         "rects": [
@@ -953,6 +986,7 @@ export const LEASE = [
         "meaning": "The landlord’s right to enter the home, the circumstances, and the required communication.",
         "whyItMatters": "Paragraph 29 states that when nobody is present, written notice of the entry must be left in a conspicuous place immediately afterward, and that entry must be for one of the listed purposes.",
         "importantToKnow": "This varies from region to region.",
+        "soe": [{"number": 300, "title": "Wellness Check", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Entering the Home | Lease 29",
         "needsContent": false,
         "rects": [
@@ -1008,6 +1042,7 @@ export const LEASE = [
         "definition2Title": "Sublease",
         "definition2": "An arrangement in which a tenant rents all or part of the leased property to a subtenant while remaining responsible for meeting all obligations under the lease with the landlord.",
         "whyItMatters": "Paragraph 31(3) states that the departing and remaining residents remain liable for all lease obligations for the rest of the original lease term, and the Procedures for Replacement paragraph repeats that the departing resident remains liable even if a new Lease Contract is signed.",
+        "soe": [{"number": 104, "title": "Roommates – Adding and/or Removing", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 106, "title": "Resident Transfer", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Lease Assignment, Sublease Agreement | Lease 31 — flagged",
         "needsContent": false,
         "contentFlag": "conflict",
@@ -1057,6 +1092,7 @@ export const LEASE = [
         "definitionTitle": "Eviction",
         "definition": "The formal process that terminates the lease early. Eviction takes place as a result of certain conditions, which the lease outlines.",
         "whyItMatters": "Paragraph 33 states that termination of possession rights or subsequent reletting does not release the resident from liability for future rent or other lease obligations.",
+        "soe": [{"number": 258, "title": "Delinquency", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 262, "title": "Collecting Delinquent Receivables", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Eviction | Lease 33 — flagged",
         "needsContent": false,
         "contentFlag": "ambiguous",
@@ -1083,6 +1119,7 @@ export const LEASE = [
         "title": "Holdover, Other Remedies, and Mitigation",
         "leaseLanguage": "**Holdover.** You or any occupant, invitee, or guest must not hold over beyond the date contained in your move-out notice or our notice to vacate (or beyond a different move-out date agreed to by the parties in writing). … **Mitigation of Damages.** If you move out early, you’ll be subject to paragraph 11 (Early Move-Out) and all other remedies. We’ll exercise customary diligence to relet and mitigate damages. We’ll credit all subsequent rent that we actually receive from subsequent residents against your liability for past-due and future rent and other sums due.",
         "meaning": "Paragraph 33 describes what applies when a resident stays past the move-out date, and separately describes the owner’s commitment to exercise customary diligence to relet and to credit subsequent rent received.",
+        "soe": [{"number": 316, "title": "Credit Reporting", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "Lease 33 (Holdover, Other Remedies, Remedies Cumulative, Mitigation of Damages) — supply copy, or approve this neutral restatement.",
         "needsContent": true,
         "rects": [
@@ -1214,7 +1251,7 @@ export const LEASE = [
         "definition": "A formal notice given to the landlord by a resident stating they intend to end occupancy of the premises and not renew the lease.",
         "whyItMatters": "Paragraph 46 states all notices to vacate must be in writing and must state the intended move-out date, and describes the consequences when notice does not meet the timing requirements in 3.",
         "example": "Under this lease, 60 days written notice is required (Paragraph 3).",
-        "soe": [{"number": 272, "title": "Notice to Vacate", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SOEs%20Documents/2-Resident/Notice%20to%20Vacate.docx"}],
+        "soe": [{"number": 272, "title": "Notice to Vacate", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 227, "title": "Non-Renewal", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Notice to vacate, Termination | Lease 46, 3 — flagged",
         "needsContent": false,
         "contentFlag": "ambiguous",
@@ -1254,6 +1291,7 @@ export const LEASE = [
         "meaning": "The formal procedures followed by management and the resident to complete a move-out.",
         "whyItMatters": "Paragraph 47 states that the move-out date cannot be changed unless both parties agree in writing, that the resident is prohibited by law from applying the security deposit to rent, and that all residents, guests and occupants must vacate before the 30-day deposit refund period begins.",
         "importantToKnow": ["Paragraph 47 requires giving the owner and the U.S. Postal Service each resident’s forwarding address in writing.", "This varies from state to state and region to region."],
+        "soe": [{"number": 276, "title": "Move-Out Process", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": 274, "title": "Pre-Move Out Inspection", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Move-Out Procedures | Lease 47",
         "needsContent": false,
         "rects": [
@@ -1297,6 +1335,7 @@ export const LEASE = [
         "definition": "The statement sent after the move-out inspection listing all charges, including final utility and rent charges.",
         "whyItMatters": "Paragraph 49 describes the resident’s right to request and inspect the damage list within the stated window, and the effect of signing or of not objecting to the list.",
         "importantToKnow": "This can vary from region to region.",
+        "soe": [{"number": 274, "title": "Pre-Move Out Inspection", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Move-out Inspection, FAS | Lease 49 — flagged",
         "needsContent": false,
         "contentFlag": "ambiguous",
@@ -1333,7 +1372,7 @@ export const LEASE = [
             "label": "Inventory and Condition form (Paragraph 26), page 5"
           }
         ],
-        "soe": [{"number": 284, "title": "Security Deposit Refunds", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SOEs%20Documents/2-Resident/Security%20Deposit%20Refunds.docx"}],
+        "soe": [{"number": 284, "title": "Security Deposit Refunds", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: Wear and tear | Lease 50, 26",
         "needsContent": false,
         "rects": [
@@ -1356,7 +1395,7 @@ export const LEASE = [
         "whyItMatters": "Paragraph 51 requires the resident to provide written notice of a forwarding address on or before termination of the lease, and states that the refund and an itemized accounting are mailed to that address.",
         "example": "Of the $500.00 deposit, any lawful deductions are itemized and the remainder returned.",
         "importantToKnow": "This often varies from region to region.",
-        "soe": [{"number": 284, "title": "Security Deposit Refunds", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SOEs%20Documents/2-Resident/Security%20Deposit%20Refunds.docx"}],
+        "soe": [{"number": 284, "title": "Security Deposit Refunds", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "WIL: FAS / 30-day return | Lease 51, 49 — flagged",
         "needsContent": false,
         "contentFlag": "ambiguous",
@@ -1378,7 +1417,7 @@ export const LEASE = [
         "leaseLanguage": "**Surrender.** You have surrendered the apartment when: (1) the move-out date has passed and no one is living in the apartment in our reasonable judgment; or (2) all apartment keys and access devices listed in paragraph 5 (Keys) have been turned in where rent is paid — whichever date occurs first. **Abandonment.** You have abandoned the apartment when all of the following have occurred: (1) everyone appears to have moved out with the intention to give up all rights to occupy or use the apartment in our reasonable judgment; (2) you’ve been in default for non-payment of rent for 5 consecutive days …; and (3) you’ve not responded for 2 days to our notice left on the inside of the main entry door, stating that we consider the apartment abandoned.",
         "meaning": "Paragraph 51 defines when the apartment is considered surrendered, and the conditions that must all occur for it to be considered abandoned.",
         "importantToKnow": "This often varies from region to region.",
-        "soe": [{"number": 284, "title": "Security Deposit Refunds", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SOEs%20Documents/2-Resident/Security%20Deposit%20Refunds.docx"}],
+        "soe": [{"number": 284, "title": "Security Deposit Refunds", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}, {"number": null, "title": "Abandonment", "section": "Resident", "url": "https://cortlandpartners.sharepoint.com/sites/SOES/SitePages/soes_resident.aspx"}],
         "source": "Lease 51 (Surrender, Abandonment) — supply copy, or approve this neutral restatement.",
         "needsContent": true,
         "rects": [

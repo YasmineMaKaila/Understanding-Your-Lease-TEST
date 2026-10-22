@@ -85,7 +85,7 @@ Content and presentation are fully separated. **To add or change a page or a ter
   meaning, definitionTitle, definition, definition2Title, definition2,
   whyItMatters, example,
   importantToKnow,                    // a string, or an array of paragraphs
-  soe: [{ number, title, url }],      // related Cortland SOEs (internal SharePoint links)
+  soe: [{ number, title, section, url }], // related Cortland SOEs (SOE section pages)
   crossRef: [{ page, hotspot, label }],
   source,                             // provenance, for auditing
   needsContent: false,                // true → renders an "explanation pending" state
@@ -138,6 +138,11 @@ node tools/generate-narration.mjs --dry-run                     # what would be 
 ELEVENLABS_API_KEY=sk_... node tools/generate-narration.mjs     # record into assets/audio/
 ```
 
+To record from GitHub instead of your own computer, copy `tools/record-narration.yml` to
+`.github/workflows/record-narration.yml` at the top of the repository, add the key as the
+repository secret `ELEVENLABS_API_KEY`, and run **Record Jessica narration** from the Actions tab.
+Use `--only=<term-id>` (or the workflow's "Test one term" box) to record a single test clip.
+
 Every clip is fingerprinted from its exact script, so **after any copy change, run the script again**:
 it re-records only the terms whose wording changed and deletes clips for terms that no longer
 qualify. If a term's recording is missing or out of date, the Listen button falls back to the
@@ -146,9 +151,11 @@ the words on screen.
 
 ## Related SOEs
 
-Terms that have a matching Cortland Standard of Excellence show a **Related SOEs** list that opens
-the SOE on the SOEs SharePoint site in a new tab. These links work only for people signed in to
-Cortland's Microsoft 365.
+Terms that have a matching Cortland Standard of Excellence show a **Related SOEs** list. Each link
+opens that SOE's section page on the SOE site (Customers, Resident, Community, Financials or
+Service) in a new tab, where the SOE is selected from the list. Links are stored per term in
+`js/lease-data.js` as `soe: [{ number, title, section, url }]`. They work only for people signed in
+to Cortland's Microsoft 365.
 
 ---
 

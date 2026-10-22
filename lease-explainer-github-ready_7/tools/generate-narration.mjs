@@ -7,6 +7,7 @@
 
      node tools/generate-narration.mjs --dry-run      # list clips + character count, no API calls
      ELEVENLABS_API_KEY=sk_... node tools/generate-narration.mjs
+     ELEVENLABS_API_KEY=sk_... node tools/generate-narration.mjs --only=monthly-rent   # one test clip
 
    Only clips whose copy changed since the last run are re-recorded (each clip
    is fingerprinted from its exact script, voice and model). --force re-records
@@ -27,6 +28,7 @@ const { VOICE, AUDIO_DIR, narrationScript, narrationHash, hasNarration } =
 const args = new Set(process.argv.slice(2));
 const DRY = args.has('--dry-run');
 const FORCE = args.has('--force');
+const ONLY = (process.argv.find((a) => a.startsWith('--only=')) || '').slice(7).trim();
 const OUT = path.join(ROOT, AUDIO_DIR);
 const MANIFEST = path.join(OUT, 'manifest.json');
 const KEY = process.env.ELEVENLABS_API_KEY;
@@ -37,8 +39,13 @@ let manifest = { voice: VOICE, clips: {} };
 try { manifest = JSON.parse(await readFile(MANIFEST, 'utf8')); } catch { /* first run */ }
 manifest.clips ||= {};
 
-const terms = LEASE.flatMap((p) => p.hotspots.map((h) => ({ page: p.page, h })))
+const allTerms = LEASE.flatMap((p) => p.hotspots.map((h) => ({ page: p.page, h })))
   .filter(({ h }) => hasNarration(h));
+const terms = ONLY ? allTerms.filter(({ h }) => h.id === ONLY) : allTerms;
+if (ONLY && !terms.length) {
+  console.error(`No term with id "${ONLY}". Term ids are listed by --dry-run.`);
+  process.exit(1);
+}
 
 let chars = 0;
 const todo = [];
@@ -93,8 +100,13 @@ for (const { h, script, hash, file } of todo) {
   console.log('done');
 }
 
-/* remove clips for terms that no longer have narration (e.g. back to draft) */
-const keep = new Set(terms.map(({ h }) => h.id));
+/* remove clips for terms that no longer exist (skipped on a single-term test run) */
+if (ONLY) {
+  await writeFile(MANIFEST, JSON.stringify(manifest, null, 2) + '\n');
+  console.log(`Test clip done: ${AUDIO_DIR}${ONLY}.mp3`);
+  process.exit(0);
+}
+const keep = new Set(allTerms.map(({ h }) => h.id));
 for (const id of Object.keys(manifest.clips)) {
   if (keep.has(id)) continue;
   await unlink(path.join(OUT, manifest.clips[id].file)).catch(() => {});

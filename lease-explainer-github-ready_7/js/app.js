@@ -534,6 +534,8 @@ function renderPanel() {
   if (h.soe && h.soe.length) {
     const x = el('div', 'soes');
     x.appendChild(el('div', 'xrefs__label', 'Related SOEs'));
+    x.appendChild(el('p', 'soes__note',
+      'Each link opens that section of the SOE site. Select the SOE from the list there.'));
     const ul = el('ul');
     h.soe.forEach((d) => {
       const li = el('li');
@@ -541,9 +543,11 @@ function renderPanel() {
       a.href = d.url;
       a.target = '_blank';
       a.rel = 'noopener noreferrer';
-      a.appendChild(el('span', 'soe__num', `SOE ${d.number}`));
+      if (d.number != null) a.appendChild(el('span', 'soe__num', `SOE ${d.number}`));
       a.appendChild(el('span', 'soe__title', d.title));
-      a.appendChild(el('span', 'sr-only', ' (opens SharePoint in a new tab)'));
+      if (d.section) a.appendChild(el('span', 'soe__sec', `${d.section} SOEs`));
+      a.appendChild(el('span', 'sr-only',
+        ` (opens the ${d.section || ''} SOEs page in a new tab)`));
       li.appendChild(a);
       ul.appendChild(li);
     });
