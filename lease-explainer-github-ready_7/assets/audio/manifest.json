@@ -4,5 +4,11 @@
     "id": "cgSgspJ2msm6clMCkdW9",
     "model": "eleven_multilingual_v2"
   },
-  "clips": {}
+  "clips": {
+    "rent": {
+      "file": "rent.mp3",
+      "hash": "f14f0576",
+      "chars": 973
+    }
+  }
 }
