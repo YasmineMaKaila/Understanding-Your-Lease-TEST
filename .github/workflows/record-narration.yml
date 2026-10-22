@@ -16,6 +16,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: record-narration
@@ -48,14 +49,27 @@ jobs:
           fi
 
       - name: Save recordings to the repository
+        id: save
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282舫憹actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "${{ inputs.folder }}/assets/audio"
           if git diff --cached --quiet; then
             echo "Nothing new to save."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Record Jessica narration${{ inputs.only && format(' ({0})', inputs.only) || '' }}"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # A save made by this workflow does not start a GitHub Pages rebuild on
+      # its own, so ask Pages to republish the site with the new recordings.
+      - name: Republish the site
+        if: steps.save.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" \
+            || echo "::warning::Could not start a Pages rebuild. Edit and commit any file to republish the site."
 
