@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Understanding Your Lease — Interactive Guide</title>
+<meta name="description" content="An interactive, plain-language walkthrough of a residential apartment lease. All identifying information shown is fictional.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preload" as="image" href="assets/lease-page-01-sanitized.webp">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="app">
+
+  <header class="masthead">
+    <div class="wordmark">CORTLAND <b aria-hidden="true"></b> <span>Interactive Education</span></div>
+    <div class="spacer"></div>
+    <div class="progress-chip" id="progressChip" hidden>
+      <span class="progress-track"><span class="progress-fill" id="progressFill"></span></span>
+      <span id="progressText">1 of 9 pages</span>
+    </div>
+    <button class="btn btn--ghost btn--sm" id="introBtn" type="button">Start over</button>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════════════ INTRO ═══════════════════════════ -->
+    <section class="screen intro" id="intro" aria-labelledby="intro-h">
+      <div class="intro__head sheet">
+        <p class="intro__eyebrow">
+          <span class="intro__badge" aria-hidden="true">
+            <img src="assets/resident-experience-icon.png" alt="">
+          </span>
+          Resident Experience
+        </p>
+        <h1 id="intro-h" tabindex="-1">Understanding Your Lease</h1>
+        <p class="intro__lede">
+          This interactive guide helps explain common sections of your lease in plain language.
+        </p>
+      </div>
+
+      <div class="intro__steps sheet">
+        <div class="intro__how">
+          <div class="how">
+            <span class="how__n" aria-hidden="true">1</span>
+            <p><strong>Hover, click, or tap</strong> highlighted areas of the document to learn more.</p>
+          </div>
+          <div class="how">
+            <span class="how__n" aria-hidden="true">2</span>
+            <p>Use <strong>Previous Term</strong> and <strong>Next Term</strong> if you would prefer
+               to walk through each section in order.</p>
+          </div>
+          <div class="how">
+            <span class="how__n" aria-hidden="true">3</span>
+            <p>Everything is <strong>keyboard accessible</strong>, and every page has a
+               plain-text version.</p>
+          </div>
+        </div>
+
+        <div class="intro__cta">
+          <button class="btn btn--primary" id="startBtn" type="button">START →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ LEASE SCREEN ════════════════════════ -->
+    <section class="screen" id="leaseScreen" aria-labelledby="pageHeading" hidden>
+
+      <div class="pagehead sheet">
+        <div class="pagehead__titles">
+          <p class="pagehead__cat" id="pageCat"></p>
+          <h2 id="pageHeading" tabindex="-1"></h2>
+          <p class="pagehead__meta" id="pageMeta"></p>
+        </div>
+        <div class="spacer"></div>
+        <div class="pagehead__tools">
+          <button class="btn btn--sm" id="textBtn" type="button">
+            <span class="ico" aria-hidden="true">☰</span> Read this page as text
+          </button>
+          <div class="sections">
+            <button class="btn btn--sm" id="sectionsBtn" type="button"
+                    aria-expanded="false" aria-haspopup="true" aria-controls="sectionsList">
+              Lease Sections ▾
+            </button>
+            <ul class="sections__list" id="sectionsList" aria-label="Lease sections" hidden></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="leasebody sheet">
+      <div class="work">
+
+        <!-- ─────────────── document viewer ─────────────── -->
+        <div class="docpane">
+          <div class="viewer" id="viewer">
+            <div class="doc" id="doc">
+              <img class="doc__img" id="docImg" alt="" draggable="false" decoding="async">
+              <div class="hs-layer" id="hsLayer" role="group"></div>
+            </div>
+          </div>
+
+          <div class="doctools">
+            <div class="guided" role="group" aria-label="Guided walkthrough">
+              <button class="btn btn--sm" id="prevTerm" type="button">← Previous Term</button>
+              <span class="guided__count" id="termCount" aria-live="off"></span>
+              <button class="btn btn--sm" id="nextTerm" type="button">Next Term →</button>
+            </div>
+            <button class="btn btn--sm" id="fullPageBtn" type="button">View Full Page</button>
+            <div class="spacer"></div>
+            <span class="zoomstate" id="zoomState" aria-hidden="true">Full page</span>
+          </div>
+
+        </div>
+
+        <!-- ─────────────── explanation panel ─────────────── -->
+        <aside class="panel" id="panel" aria-labelledby="panel-heading">
+          <h2 class="sr-only" id="panel-heading">Explanation</h2>
+          <p class="sr-only" id="panelTitle" aria-hidden="true"></p>
+          <div id="panelBody" aria-live="polite"></div>
+          <p class="sr-only" id="panel-live">
+            Selecting a provision updates the explanation panel beside the document.
+          </p>
+        </aside>
+
+          <nav class="pagenav" aria-label="Lease page navigation">
+            <span class="pagenav__count" id="pageCount"></span>
+            <div class="pagenav__pill pagenav__pill--terms">
+              <button class="btn" id="prevTermPill" type="button">← Last Term</button>
+              <button class="btn" id="nextTermPill" type="button">Next Term →</button>
+            </div>
+            <div class="pagenav__pill">
+              <button class="btn" id="prevPage" type="button">← Previous Page</button>
+              <img class="pagenav__mark" src="assets/resident-experience-icon-green.png" alt="">
+              <button class="btn" id="nextPage" type="button">Next Page →</button>
+            </div>
+          </nav>
+
+
+      </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════ SUMMARY ══════════════════════════ -->
+    <section class="screen summary sheet" id="summary" aria-labelledby="summary-h" hidden>
+      <div class="summary__head">
+        <p class="intro__eyebrow">Wrap-up</p>
+        <h1 id="summary-h" tabindex="-1">What to carry forward</h1>
+        <p class="summary__lede">
+          Everything below is drawn from the pages you just walked through. Nothing new has been
+          added. If there is a difference between this summary and the lease, the lease controls.
+        </p>
+      </div>
+      <div class="summary__grid" id="summaryGrid"></div>
+      <div class="summary__cta">
+        <button class="btn btn--primary" id="ktBtn" type="button">Key Terms to Know →</button>
+        <button class="btn" id="reviewBtn" type="button">Review Lease Again</button>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ KEY TERMS ═══════════════════════════ -->
+    <section class="screen keyterms sheet" id="keyTerms" aria-labelledby="keyterms-h" hidden>
+      <div class="summary__head">
+        <p class="intro__eyebrow">Reference</p>
+        <h1 id="keyterms-h" tabindex="-1">Key Terms to Know</h1>
+        <p class="summary__lede">
+          General lease vocabulary drawn from the source material, gathered in one place.
+        </p>
+      </div>
+      <div class="keyterms__body"><div class="precard" id="keyTermsBody"></div></div>
+      <div class="summary__cta">
+        <button class="btn" id="ktBackBtn" type="button">← Back to summary</button>
+        <button class="btn btn--primary" id="reviewBtn2" type="button">Finish →</button>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════ THANK YOU ════════════════════════ -->
+    <section class="screen thanks" id="thanks" aria-labelledby="thanks-h" hidden>
+      <div class="thanks__titlecard">
+        <p class="thanks__eyebrow">Thank you for completing Understanding Your Lease!</p>
+      </div>
+      <div class="thanks__card">
+        <img class="thanks__art" src="assets/thanks-associate.png" alt="">
+        <div class="thanks__copy">
+          <h1 id="thanks-h" tabindex="-1">THANK YOU</h1>
+          <p>For your participation and engagement throughout</p>
+          <p>this learning experience.</p>
+          <p>We hope the content provided useful knowledge,</p>
+          <p>practical tools, and new perspectives that will</p>
+          <p>support your success.</p>
+          <p>Your commitment to continuous learning is</p>
+          <p>appreciated and makes a meaningful impact.</p>
+        </div>
+        <div class="thanks__nav">
+          <div class="pagenav__pill">
+            <button class="btn" id="thanksBack" type="button">← Previous</button>
+            <img class="pagenav__mark" src="assets/resident-experience-icon-green.png" alt="">
+            <button class="btn" id="thanksHome" type="button">Home →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pagefoot">
+    <p class="pagefoot__caption">Understanding Your Lease Talent &amp; Developments August 2026</p>
+    <img class="pagefoot__mark" src="assets/cortland-logo.png" alt="Cortland">
+  </footer>
+</div>
+
+<!-- text alternative -->
+<dialog class="textdlg" id="textDlg" aria-labelledby="textDlgTitle">
+  <div class="textdlg__head">
+    <h2 id="textDlgTitle"></h2>
+    <div class="spacer"></div>
+    <form method="dialog"><button class="btn btn--sm" type="submit">Close</button></form>
+  </div>
+  <div class="textdlg__body"><pre id="textDlgBody"></pre></div>
+</dialog>
+
+<div class="sr-only" id="announcer" role="status" aria-live="polite"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
