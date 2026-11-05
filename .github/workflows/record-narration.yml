@@ -48,8 +48,11 @@ jobs:
             node tools/generate-narration.mjs
           fi
 
+      # Runs even if recording stopped partway (for example, out of credits),
+      # so every clip that was already paid for is kept.
       - name: Save recordings to the repository
         id: save
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -66,10 +69,9 @@ jobs:
       # A save made by this workflow does not start a GitHub Pages rebuild on
       # its own, so ask Pages to republish the site with the new recordings.
       - name: Republish the site
-        if: steps.save.outputs.changed == 'true'
+        if: always() && steps.save.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh api -X POST "repos/${{ github.repository }}/pages/builds" \
             || echo "::warning::Could not start a Pages rebuild. Edit and commit any file to republish the site."
-
