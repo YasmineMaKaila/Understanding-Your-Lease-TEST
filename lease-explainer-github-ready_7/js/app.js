@@ -535,7 +535,7 @@ function renderPanel() {
     const x = el('div', 'soes');
     x.appendChild(el('div', 'xrefs__label', 'Related SOEs'));
     x.appendChild(el('p', 'soes__note',
-      'Each link opens that section of the SOE site. Select the SOE from the list there.'));
+      'Each link opens that section of the SOE site. Select the correct SOE from the list on the left.'));
     const ul = el('ul');
     h.soe.forEach((d) => {
       const li = el('li');
