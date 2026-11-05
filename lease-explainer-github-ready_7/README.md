@@ -128,8 +128,8 @@ the data so the two don't drift.
 ## Listen narration (ElevenLabs, voice: Jessica)
 
 Each term's **Listen** button plays a recording of the right-hand panel in this order, skipping any
-section the term does not have: **Lease Language → What This Means → Why It Matters → Important to
-Know**. Key Term, Example, SOE links and review flags are not read.
+section the term does not have: **What This Means → Why It Matters → Important to Know**. Lease
+Language (already on screen), Key Term, Example, SOE links and review flags are not read.
 
 Recordings are made ahead of time, so no ElevenLabs key is ever in the browser:
 
