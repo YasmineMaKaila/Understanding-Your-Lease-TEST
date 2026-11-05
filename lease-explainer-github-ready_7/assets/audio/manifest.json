@@ -7,13 +7,13 @@
   "clips": {
     "rent": {
       "file": "rent.mp3",
-      "hash": "f14f0576",
-      "chars": 973
+      "hash": "45278459",
+      "chars": 417
     },
     "utilities": {
       "file": "utilities.mp3",
-      "hash": "2c685abb",
-      "chars": 365
+      "hash": "fee3ea73",
+      "chars": 212
     },
     "parties": {
       "file": "parties.mp3",
@@ -39,6 +39,221 @@
       "file": "keys.mp3",
       "hash": "6b5f86df",
       "chars": 234
+    },
+    "utility-restrictions": {
+      "file": "utility-restrictions.mp3",
+      "hash": "e3da4be7",
+      "chars": 187
+    },
+    "insurance": {
+      "file": "insurance.mp3",
+      "hash": "61609968",
+      "chars": 424
+    },
+    "locks": {
+      "file": "locks.mp3",
+      "hash": "5dbe44e3",
+      "chars": 207
+    },
+    "special-provisions": {
+      "file": "special-provisions.mp3",
+      "hash": "329af1f6",
+      "chars": 373
+    },
+    "early-moveout": {
+      "file": "early-moveout.mp3",
+      "hash": "88f8f9af",
+      "chars": 470
+    },
+    "contractual-lien": {
+      "file": "contractual-lien.mp3",
+      "hash": "a08fefa9",
+      "chars": 304
+    },
+    "property-left-behind": {
+      "file": "property-left-behind.mp3",
+      "hash": "c4e81e12",
+      "chars": 190
+    },
+    "first-month-rent": {
+      "file": "first-month-rent.mp3",
+      "hash": "41b02a47",
+      "chars": 126
+    },
+    "rent-increases": {
+      "file": "rent-increases.mp3",
+      "hash": "21c05603",
+      "chars": 461
+    },
+    "delay-occupancy": {
+      "file": "delay-occupancy.mp3",
+      "hash": "0b00b12d",
+      "chars": 206
+    },
+    "additional-rent": {
+      "file": "additional-rent.mp3",
+      "hash": "5ed942a1",
+      "chars": 173
+    },
+    "disclosure-rights": {
+      "file": "disclosure-rights.mp3",
+      "hash": "5c213f22",
+      "chars": 194
+    },
+    "community-policies": {
+      "file": "community-policies.mp3",
+      "hash": "d6608625",
+      "chars": 399
+    },
+    "prohibited-conduct": {
+      "file": "prohibited-conduct.mp3",
+      "hash": "146f24c1",
+      "chars": 195
+    },
+    "parking": {
+      "file": "parking.mp3",
+      "hash": "3bffddd7",
+      "chars": 333
+    },
+    "release-of-resident": {
+      "file": "release-of-resident.mp3",
+      "hash": "25a01e0e",
+      "chars": 444
+    },
+    "military-transfer": {
+      "file": "military-transfer.mp3",
+      "hash": "4f7ef122",
+      "chars": 277
+    },
+    "resident-safety": {
+      "file": "resident-safety.mp3",
+      "hash": "6a8d6729",
+      "chars": 192
+    },
+    "crime-emergency": {
+      "file": "crime-emergency.mp3",
+      "hash": "343e0f36",
+      "chars": 230
+    },
+    "condition-alterations": {
+      "file": "condition-alterations.mp3",
+      "hash": "8d2f9a8f",
+      "chars": 301
+    },
+    "requests-repairs": {
+      "file": "requests-repairs.mp3",
+      "hash": "81adedd6",
+      "chars": 451
+    },
+    "animals": {
+      "file": "animals.mp3",
+      "hash": "34cbfe90",
+      "chars": 464
+    },
+    "when-we-may-enter": {
+      "file": "when-we-may-enter.mp3",
+      "hash": "2b08c6b3",
+      "chars": 370
+    },
+    "joint-several": {
+      "file": "joint-several.mp3",
+      "hash": "19a9ca9e",
+      "chars": 380
+    },
+    "replacements-subletting": {
+      "file": "replacements-subletting.mp3",
+      "hash": "f23f1921",
+      "chars": 420
+    },
+    "responsibilities-owner": {
+      "file": "responsibilities-owner.mp3",
+      "hash": "4b818bf0",
+      "chars": 391
+    },
+    "default-eviction": {
+      "file": "default-eviction.mp3",
+      "hash": "62621890",
+      "chars": 321
+    },
+    "holdover-mitigation": {
+      "file": "holdover-mitigation.mp3",
+      "hash": "a98f5fe3",
+      "chars": 227
+    },
+    "general-clauses": {
+      "file": "general-clauses.mp3",
+      "hash": "cae7011a",
+      "chars": 360
+    },
+    "notice": {
+      "file": "notice.mp3",
+      "hash": "4ab64d7a",
+      "chars": 233
+    },
+    "obligation-to-vacate": {
+      "file": "obligation-to-vacate.mp3",
+      "hash": "d230309a",
+      "chars": 196
+    },
+    "payments": {
+      "file": "payments.mp3",
+      "hash": "1386726b",
+      "chars": 220
+    },
+    "moveout-notice": {
+      "file": "moveout-notice.mp3",
+      "hash": "b6a57db6",
+      "chars": 279
+    },
+    "moveout-procedures": {
+      "file": "moveout-procedures.mp3",
+      "hash": "8dc0bbc0",
+      "chars": 594
+    },
+    "cleaning": {
+      "file": "cleaning.mp3",
+      "hash": "dfa5c424",
+      "chars": 237
+    },
+    "moveout-inspection": {
+      "file": "moveout-inspection.mp3",
+      "hash": "250230db",
+      "chars": 389
+    },
+    "deposit-deductions": {
+      "file": "deposit-deductions.mp3",
+      "hash": "2e7c9dcc",
+      "chars": 316
+    },
+    "deposit-return": {
+      "file": "deposit-return.mp3",
+      "hash": "a8ecc64d",
+      "chars": 384
+    },
+    "surrender-abandonment": {
+      "file": "surrender-abandonment.mp3",
+      "hash": "b0fd7046",
+      "chars": 218
+    },
+    "disclosure-notice": {
+      "file": "disclosure-notice.mp3",
+      "hash": "baf44706",
+      "chars": 291
+    },
+    "managing-agent-license": {
+      "file": "managing-agent-license.mp3",
+      "hash": "4a14872c",
+      "chars": 160
+    },
+    "signatures": {
+      "file": "signatures.mp3",
+      "hash": "4ffd009c",
+      "chars": 644
+    },
+    "special-provisions-continued": {
+      "file": "special-provisions-continued.mp3",
+      "hash": "8ce84e53",
+      "chars": 272
     }
   }
 }
