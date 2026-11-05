@@ -491,8 +491,8 @@ function renderPanel() {
   }
 
   /* Listen — right side, below Lease Language, with a cushion before
-     What This Means. Plays Lease Language, What This Means, Why It Matters
-     and Important to Know (see js/narration.js). */
+     What This Means. Plays What This Means, Why It Matters and Important
+     to Know (see js/narration.js). */
   attachListen(term, h);
 
   const block = (label, text) => {

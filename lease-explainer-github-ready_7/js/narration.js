@@ -6,15 +6,16 @@
 
    The Listen button reads ONLY these right-panel sections, in this order,
    skipping any a term does not have:
-       Lease Language → What This Means → Why It Matters → Important to Know
-   Key Term, Example, SOE links, review flags and provenance are never read.
+       What This Means → Why It Matters → Important to Know
+   Lease Language (already on screen), Key Term, Example, SOE links, review
+   flags and provenance are never read.
    Every term with any of those sections gets a Listen button.
    =========================================================================== */
 
 export const VOICE = {
   name: 'Jessica',
   id: 'cgSgspJ2msm6clMCkdW9',          // ElevenLabs premade "Jessica"
-  model: 'eleven_multilingual_v2',
+  model: 'eleven_flash_v2_5',          // half the credits of eleven_multilingual_v2
 };
 
 export const AUDIO_DIR = 'assets/audio/';
@@ -26,7 +27,6 @@ const asText = (v) => (Array.isArray(v) ? v.join(' ') : v || '');
 export function narrationSections(h) {
   if (!h) return [];
   return [
-    ['Lease language', h.leaseLanguage],
     ['What this means', h.meaning],
     ['Why it matters', h.whyItMatters],
     ['Important to know', asText(h.importantToKnow)],
