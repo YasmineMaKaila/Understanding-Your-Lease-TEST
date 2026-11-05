@@ -90,7 +90,13 @@ for (const { h, script, hash, file } of todo) {
     process.exit(1);
   }
   if (!res.ok) {
-    console.error(`failed (${res.status}): ${await res.text()}`);
+    const body = await res.text();
+    if (/quota_exceeded/.test(body)) {
+      console.error('stopped: your ElevenLabs credits have run out. Clips recorded so far are saved;'
+        + ' run again after your credits reset or your plan is upgraded and it will continue from here.');
+    } else {
+      console.error(`failed (${res.status}): ${body}`);
+    }
     process.exit(1);           // manifest is saved after every clip, so a rerun resumes
   }
   await writeFile(path.join(OUT, file), Buffer.from(await res.arrayBuffer()));
