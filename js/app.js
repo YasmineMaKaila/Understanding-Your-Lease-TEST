@@ -546,7 +546,6 @@ function activateLease(id, { announceIt = false } = {}) {
   document.documentElement.dataset.lease = id;
   preloadFirstPage(L);
 
-  renderPrivacyNotice();
   renderKeyTerms();
   renderSummary();
   renderSections();
@@ -625,21 +624,6 @@ function renderLeaseControls() {
 /* =========================================================================
    static screens
    ========================================================================= */
-/** The privacy notice is rendered from FICTION so the disclaimer can never drift
- *  out of step with the fictional values actually baked into the page images. */
-function renderPrivacyNotice() {
-  if (!els.privacyNotice) return;
-  const f = FICTION;
-  const st = f.propertyState || LEASES[state.leaseId].state;
-  els.privacyNotice.textContent =
-    `The names, addresses, dates, dollar amounts and other identifying information shown in ` +
-    `this educational example are fictionalized. The resident is ${f.residentName}, the ` +
-    `community is ${f.propertyName} at ${f.propertyAddress}, ${f.propertyCity}, ${st} ` +
-    `${f.propertyZip}, and the monthly rent is ${f.monthlyRent}. None of these values, and no ` +
-    `value anywhere in these pages, refers to a real resident or a real property. The fictional ` +
-    `values are part of the page images themselves — nothing is covered over in the browser.`;
-}
-
 
 function renderKeyTerms() {
   const host = els.keyTermsBody;
@@ -703,7 +687,7 @@ function cache() {
     'prevPage', 'nextPage', 'prevTerm', 'nextTerm', 'prevTermPill', 'nextTermPill', 'termCount', 'fullPageBtn',
     'sectionsBtn', 'sectionsList', 'progressChip', 'progressFill', 'progressText',
     'announcer', 'zoomState', 'textDlg', 'textDlgTitle', 'textDlgBody', 'textBtn',
-    'startBtn', 'reviewBtn', 'reviewBtn2', 'summaryGrid', 'introBtn', 'privacyNotice',
+    'startBtn', 'reviewBtn', 'reviewBtn2', 'summaryGrid', 'introBtn',
     'keyTerms', 'keyTermsBody', 'ktBtn', 'ktBackBtn',
     'pickerGrid', 'leaseSwitch', 'leaseSwitchBtns',
   ];
