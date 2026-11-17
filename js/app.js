@@ -547,6 +547,7 @@ function activateLease(id, { announceIt = false } = {}) {
   preloadFirstPage(L);
 
   renderPrivacyNotice();
+  renderFormNotice();
   renderKeyTerms();
   renderSummary();
   renderSections();
@@ -640,6 +641,15 @@ function renderPrivacyNotice() {
     `values are part of the page images themselves — nothing is covered over in the browser.`;
 }
 
+/** The form notice names the document actually on screen, so it has to follow the
+ *  active lease rather than sit in the markup. */
+function renderFormNotice() {
+  if (!els.formNotice) return;
+  els.formNotice.textContent =
+    `The document shown is the ${LEASES[state.leaseId].form}. The copyright and form notices ` +
+    `are reproduced unaltered on every page.`;
+}
+
 function renderKeyTerms() {
   const host = els.keyTermsBody;
   host.textContent = '';
@@ -702,7 +712,7 @@ function cache() {
     'prevPage', 'nextPage', 'prevTerm', 'nextTerm', 'prevTermPill', 'nextTermPill', 'termCount', 'fullPageBtn',
     'sectionsBtn', 'sectionsList', 'progressChip', 'progressFill', 'progressText',
     'announcer', 'zoomState', 'textDlg', 'textDlgTitle', 'textDlgBody', 'textBtn',
-    'startBtn', 'reviewBtn', 'reviewBtn2', 'summaryGrid', 'introBtn', 'privacyNotice',
+    'startBtn', 'reviewBtn', 'reviewBtn2', 'summaryGrid', 'introBtn', 'privacyNotice', 'formNotice',
     'keyTerms', 'keyTermsBody', 'ktBtn', 'ktBackBtn',
     'pickerGrid', 'leaseSwitch', 'leaseSwitchBtns',
   ];
