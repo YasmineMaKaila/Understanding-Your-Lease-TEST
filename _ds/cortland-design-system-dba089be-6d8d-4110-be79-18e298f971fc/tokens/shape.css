@@ -1,0 +1,27 @@
+:root{
+/* Cortland print and digital work is geometric and squared-off; radii stay small.
+   Pills appear only on tags and status chips. */
+--radius-none:0;
+--radius-sm:4px;
+--radius-md:8px;
+--radius-lg:14px;
+--radius-xl:20px;
+--radius-pill:999px;
+--radius-circle:50%;
+
+--border-width:1px;
+--border-width-rule:2px;         /* the navy divider rule */
+--border-width-accent:4px;       /* left/top accent bars */
+
+/* Shadows are restrained: one soft ambient layer, never dramatic. */
+--shadow-none:none;
+--shadow-sm:0 1px 2px rgba(0,45,114,.08);
+--shadow-md:0 2px 8px rgba(0,45,114,.10);
+--shadow-lg:0 8px 24px rgba(0,45,114,.12);
+--shadow-focus:0 0 0 3px rgba(0,146,189,.35);
+--shadow-inset:inset 0 1px 2px rgba(0,45,114,.08);
+
+/* Accent shape: The Leasing HUB organic filled triangle */
+--triangle-clip:polygon(50% 0%,100% 100%,0% 100%); /* @kind other */
+--overlay-scrim:linear-gradient(180deg,rgba(0,45,114,0) 0%,rgba(0,45,114,.72) 100%); /* @kind color */
+}

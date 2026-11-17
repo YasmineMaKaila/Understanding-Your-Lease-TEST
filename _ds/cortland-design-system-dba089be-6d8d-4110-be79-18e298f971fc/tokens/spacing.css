@@ -1,0 +1,26 @@
+:root{
+--space-0:0;
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:20px;
+--space-6:24px;
+--space-8:32px;
+--space-10:40px;
+--space-12:48px;
+--space-16:64px;
+--space-20:80px;
+--space-24:96px;
+
+--gutter:var(--space-6);
+--page-pad:var(--space-10);
+--section-gap:var(--space-16);
+--container-narrow:720px;
+--container:1080px;
+--container-wide:1320px;
+
+/* Clear space around the brand mark = radius of the circle icon (2.5) */
+--logo-clear-space:0.5em;
+--logo-min-height:24px;
+}

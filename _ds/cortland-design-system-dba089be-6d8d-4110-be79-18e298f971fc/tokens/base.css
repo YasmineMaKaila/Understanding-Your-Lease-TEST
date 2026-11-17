@@ -1,0 +1,10 @@
+body{margin:0;font-family:var(--font-body);font-size:var(--text-base);line-height:var(--leading-normal);color:var(--text-primary);background:var(--surface-page);-webkit-font-smoothing:antialiased}
+*,*::before,*::after{box-sizing:border-box}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-display);font-weight:var(--weight-bold);line-height:var(--leading-snug);margin:0 0 var(--space-3);letter-spacing:var(--tracking-display)}
+h1{font-size:var(--text-3xl)}h2{font-size:var(--text-2xl)}h3{font-size:var(--text-xl)}h4{font-size:var(--text-lg)}h5{font-size:var(--text-md)}h6{font-size:var(--text-sm);text-transform:uppercase;letter-spacing:var(--tracking-caps)}
+p{margin:0 0 var(--space-4);text-wrap:pretty}
+a{color:var(--text-link);text-decoration:underline;text-underline-offset:2px;transition:color var(--duration-fast) var(--ease-standard)}
+a:hover{color:var(--text-link-hover)}
+strong{font-weight:var(--weight-bold)}
+hr{border:0;border-top:var(--border-width-rule) solid var(--border-rule);margin:var(--space-6) 0}
+:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}

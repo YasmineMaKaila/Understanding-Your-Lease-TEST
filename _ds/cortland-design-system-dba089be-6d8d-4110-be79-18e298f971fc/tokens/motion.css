@@ -1,0 +1,16 @@
+:root{
+/* Motion is calm and functional: short fades and small position shifts.
+   No bounce, no spring, no long dramatic reveals. */
+--duration-fast:120ms; /* @kind other */
+--duration-base:180ms; /* @kind other */
+--duration-slow:280ms; /* @kind other */
+--ease-standard:cubic-bezier(.4,0,.2,1); /* @kind other */
+--ease-out:cubic-bezier(0,0,.2,1); /* @kind other */
+--ease-in:cubic-bezier(.4,0,1,1); /* @kind other */
+--transition-base:all var(--duration-base) var(--ease-standard);
+
+/* Interaction states */
+--hover-tint:rgba(0,45,114,.06);
+--press-scale:0.985; /* @kind other */
+--disabled-opacity:0.45; /* @kind other */
+}

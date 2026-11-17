@@ -1,0 +1,82 @@
+:root{
+/* ---- Master brand primary palette (Brand Guidelines 2.1) ---- */
+--brand-navy:#002D72;            /* PANTONE 288 - dominant brand color */
+--brand-green:#A9C23F;           /* PANTONE 2300 - primary accent */
+
+/* ---- Master brand extended palette ---- */
+--brand-green-dark:#8FAD15;      /* PANTONE 2301 */
+--brand-teal:#0092BD;            /* PANTONE 2183 */
+--brand-sky:#BBDDE6;             /* PANTONE 7457 */
+--brand-yellow:#FEDD00;          /* PANTONE 108 */
+--brand-raspberry:#C6007E;       /* PANTONE 233 */
+--brand-stone:#CFCDC9;           /* PANTONE 2330 */
+--brand-taupe:#6E6259;           /* PANTONE 404 */
+
+/* ---- Neutrals ---- */
+--white:#FFFFFF;
+--black:#000000;
+--gray-100:#F4F6F8;
+--gray-200:#E4E8EC;
+--gray-500:#666666;              /* email signature gray */
+--gray-700:#3E4650;
+
+/* ---- The Leasing HUB (Center of Excellence) ---- */
+--hub-navy:#033D7D;              /* MAIN identifying color for The HUB */
+--hub-gold:#F2BC02;              /* secondary accent */
+--hub-sky:#73B5FF;               /* secondary accent */
+
+/* ---- Talent Development color-coding key (COE Code Reference Key) ---- */
+--coe-leasing-hub:#033D7E;
+--coe-screening:#A9C23F;
+--coe-community-relations:#C6007E;
+--coe-resident-services:#0092BD;
+--coe-onesite:#ED7036;
+--coe-funnel:#F532F4;
+
+/* ---- Sub-brand accents (Brand Guidelines 2.3 / 2.4) ---- */
+--build-yellow:#FEDD00;
+--design-raspberry:#C6007E;
+--attiva-green:#9ED35A;
+--attiva-teal:#008AA7;
+--attiva-blue:#0080C8;
+--attiva-cyan:#4CC7E8;
+--attiva-orange:#FD6110;
+--attiva-amber:#EFA300;
+--attiva-gray:#5D6166;
+--elevate-cyan:#00A1DF;
+--elevate-citron:#E2E000;
+--elevate-orange:#FF4612;
+--elevate-gray:#55565A;
+--uk-blue:#006CA9;
+--uk-pale-blue:#BDD6F6;
+--uk-sky:#47A0E9;
+--uk-sand:#D3AE6F;
+--uk-sage:#D0E0C9;
+--uk-gray-5:#B2B4BE;
+--uk-gray-11:#545860;
+
+/* ---- Semantic aliases ---- */
+--text-primary:var(--brand-navy);
+--text-secondary:var(--brand-taupe);
+--text-muted:var(--gray-500);
+--text-inverse:var(--white);
+--text-accent:var(--brand-green-dark);
+--text-link:var(--brand-teal);
+--text-link-hover:var(--brand-navy);
+
+--surface-page:var(--white);
+--surface-card:var(--white);
+--surface-subtle:var(--gray-100);
+--surface-tint:var(--brand-sky);
+--surface-inverse:var(--brand-navy);
+--surface-hub:var(--hub-navy);
+
+--border-rule:var(--brand-navy);       /* the 2px navy rule used across print */
+--border-subtle:var(--brand-stone);
+--border-field:var(--gray-200);
+--focus-ring:var(--brand-teal);
+
+--accent-primary:var(--brand-green);
+--accent-secondary:var(--brand-teal);
+--accent-hub:var(--hub-gold);
+}

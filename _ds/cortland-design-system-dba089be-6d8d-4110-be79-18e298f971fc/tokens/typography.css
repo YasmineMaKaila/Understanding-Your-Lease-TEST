@@ -1,0 +1,43 @@
+:root{
+/* Families. TT Norms and Alternate Gothic No. 2 are named first so real font
+   files drop in automatically once licensed copies are installed. */
+--font-display:"TT Norms","TT Norms Pro",Poppins,system-ui,sans-serif;
+--font-body:"TT Norms","TT Norms Pro",Poppins,system-ui,sans-serif;
+--font-ui:Inter,"TT Norms",system-ui,sans-serif;
+--font-condensed:"Alternate Gothic No2",Oswald,"TT Norms",sans-serif;
+--font-accent:"Josefin Slab",Georgia,serif;
+--font-email:Arial,Helvetica,sans-serif;
+
+/* Weights (TT Norms family) */
+--weight-light:300;
+--weight-regular:400;
+--weight-medium:500;
+--weight-bold:700;
+
+/* Type scale */
+--text-3xs:11px;
+--text-2xs:12px;
+--text-xs:13px;
+--text-sm:14px;
+--text-base:16px;
+--text-md:18px;
+--text-lg:21px;
+--text-xl:26px;
+--text-2xl:32px;
+--text-3xl:40px;
+--text-4xl:52px;
+--text-5xl:68px;
+
+--leading-tight:1.05;
+--leading-snug:1.2;
+--leading-normal:1.45;
+--leading-loose:1.7;
+
+/* Loose kerning is a brand signature: the wordmark, eyebrows and all-caps
+   headlines are widely letterspaced. */
+--tracking-eyebrow:0.28em;
+--tracking-wordmark:0.34em;
+--tracking-caps:0.08em;
+--tracking-normal:0;
+--tracking-display:-0.01em;
+}

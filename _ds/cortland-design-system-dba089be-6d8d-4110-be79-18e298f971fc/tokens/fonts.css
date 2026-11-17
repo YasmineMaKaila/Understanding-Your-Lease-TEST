@@ -1,0 +1,14 @@
+/* Cortland webfonts.
+   TT Norms is the primary brand face. Two weights were supplied (Light 300,
+   Medium 500); Regular 400 and Bold 700 are NOT available yet, so the stack falls
+   back to Poppins for those. Alternate Gothic No. 2 is still missing entirely.
+   See readme.md > TYPOGRAPHY for the substitution table. */
+@font-face{font-family:"TT Norms";src:url("../../../assets/fonts/TTNorms-Light.otf") format("opentype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"TT Norms";src:url("../../../assets/fonts/TTNorms-Medium.otf") format("opentype");font-weight:500;font-style:normal;font-display:swap}
+
+/* Stand-ins, loaded from Google Fonts:
+   Poppins      -> TT Norms weights 400 and 700 (not yet supplied)
+   Oswald       -> Alternate Gothic No. 2
+   Josefin Slab -> exact match, this is the real Cortland accent face
+   Inter        -> UI/body face used by internal Cortland web tools */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Josefin+Slab:wght@400;600;700&family=Oswald:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap");
